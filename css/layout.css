@@ -33,11 +33,13 @@ header {
    height: 800px;
    min-height: 500px;
    width: 100%;
-   background: #161415 url(../images/goldengate.jpg) no-repeat top center;
+   background: #161415 url(../images/goldengatenight.jpg) no-repeat top center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
+   animation: fadein 5s;
+   -webkit-animation: fadein 5s;
 }
 
 /* vertically center banner section */
@@ -55,8 +57,43 @@ header .banner {
    padding-bottom: 30px;s
    text-align: center;
 }
+header .banner-text { 
+	width: 100%;
+	
+}
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
 
-header .banner-text { width: 100%; }
+@-moz-animation fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-webkit-animation fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+@-o-animation fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
 header .banner-text h1 {
    font: 90px/1.1em 'opensans-bold', sans-serif;
    color: #fff;
