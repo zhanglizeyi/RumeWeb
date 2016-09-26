@@ -1,4 +1,3 @@
-/*bar circle animation*/
 /* Credits: 
  * https://www.developphp.com/video/JavaScript/Circular-Progress-Loader-Canvas-JavaScript-Programming-Tutorial
  */
@@ -52,8 +51,8 @@
 	};
 	
 	var CircularSkillBar = function( elements ) {
-		this.portfolio-item = document.querySelectorAll( elements );
-		if( this.portfolio-item.length > 0 ) {
+		this.bars = document.querySelectorAll( elements );
+		if( this.bars.length > 0 ) {
 			this.init();
 		}	
 	};
@@ -67,18 +66,16 @@
 		progress: function() {
 			var self = this;
 			var index = 0;
-			var firstCanvas = self.portfolio-item[0].querySelector( "canvas" );
+			var firstCanvas = self.bars[0].querySelector( "canvas" );
 			var firstProg = new Progress( firstCanvas );
-			
-			
-			
+					
 			var timer = setInterval(function() {
 				index++;
 					
-				var canvas = self.portfolio-item[index].querySelector( "canvas" );
+				var canvas = self.bars[index].querySelector( "canvas" );
 				var prog = new Progress( canvas );
 				
-				if( index == self.portfolio-item.length ) {
+				if( index == self.bars.length ) {
 						clearInterval( timer );
 				} 
 				
@@ -88,7 +85,7 @@
 	};
 	
 	document.addEventListener( "DOMContentLoaded", function() {
-		var circularBars = new CircularSkillBar( ".portfolio-item .bar" );
+		var circularBars = new CircularSkillBar( "#bars .bar" );
 	});
 	
-})(); 
+})();

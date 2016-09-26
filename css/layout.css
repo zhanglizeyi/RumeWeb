@@ -329,23 +329,23 @@ ul#nav li.current a { color: #F06000; }
 	text-align: left;
 }
 .bars .skills {
-  	margin-top: 36px;
-   list-style: none;
+  margin-top: 36px;
+  list-style: none;
 }
 .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #ccc;
+  	background: #696969;
   	height: 42px;
   	border-radius: 3px;
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #313131;
+  color: #313131;
 	text-transform: uppercase;
-   letter-spacing: 2px;
+  letter-spacing: 2px;
 	font-weight: normal;
-   position: relative;
+  position: relative;
 	top: -36px;
 }
 .bar-expand {
@@ -355,92 +355,134 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #313131;
+   background: #000080;
    display: inline-block;
-  	height: 42px;
+   height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
 
-.photoshop {
-  	width: 60%;
-  	-moz-animation: photoshop 2s ease;
-  	-webkit-animation: photoshop 2s ease;
+.c {
+  	width: 85%;
+  	-moz-animation: c 3s ease;
+  	-webkit-animation: c 3s ease;
 }
-.illustrator {
+.javaS {
   	width: 55%;
-  	-moz-animation: illustrator 2s ease;
-  	-webkit-animation: illustrator 2s ease;
+  	-moz-animation: javaS 3s ease;
+  	-webkit-animation: javaS 3s ease;
 }
-.wordpress {
-  	width: 50%;
-  	-moz-animation: wordpress 2s ease;
-  	-webkit-animation: wordpress 2s ease;
+.sql {
+  	width: 65%;
+  	-moz-animation: sql 3s ease;
+  	-webkit-animation: sql 3s ease;
 }
 .css {
-  	width: 90%;
-  	-moz-animation: css 2s ease;
-  	-webkit-animation: css 2s ease;
+  	width: 70%;
+  	-moz-animation: css 3s ease;
+  	-webkit-animation: css 3s ease;
 }
 .html5 {
-  	width: 80%;
-  	-moz-animation: html5 2s ease;
-  	-webkit-animation: html5 2s ease;
+  	width: 85%;
+  	-moz-animation: html5 3s ease;
+  	-webkit-animation: html5 3s ease;
 }
-.jquery {
-  	width: 50%;
-  	-moz-animation: jquery 2s ease;
-  	-webkit-animation: jquery 2s ease;
+.nodejs {
+  	width: 60%;
+  	-moz-animation: nodejs 3s ease;
+  	-webkit-animation: nodejs 3s ease;
+}
+.java {
+    width: 75%;
+    -moz-animation: java 3s ease;
+    -webkit-animation: java 3s ease;
+}
+.objc {
+    width: 60%;
+    -moz-animation: objc 3s ease;
+    -webkit-animation: objc 3s ease;
+}
+.swift {
+    width: 75%;
+    -moz-animation: swf 3s ease;
+    -webkit-animation: swf 3s ease;
+
 }
 
-@-moz-keyframes photoshop {
+/*opera*/
+@-moz-keyframes c {
   0%   { width: 0px;  }
-  100% { width: 60%;  }
+  100% { width: 85%;  }
 }
-@-moz-keyframes illustrator {
+@-moz-keyframes javaS {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-moz-keyframes wordpress {
+@-moz-keyframes sql {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 65%;  }
 }
 @-moz-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 70%;  }
 }
 @-moz-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 85%;  }
 }
-@-moz-keyframes jquery {
-  0%   { width: 0px;  }
-  100% { width: 50%;  }
-}
-
-@-webkit-keyframes photoshop {
+@-moz-keyframes nodejs {
   0%   { width: 0px;  }
   100% { width: 60%;  }
 }
-@-webkit-keyframes illustrator {
+@-moz-keyframes java {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-moz-keyframes objc {
+  0% { width: 0px; }
+  100% {width: 60%; }
+}
+@-moz-keyframes swf {  
+  0% { width: 0px; }
+  100% {width: 75%; }
+}
+
+/*other explore*/
+@-webkit-keyframes c {
+  0%   { width: 0px;  }
+  100% { width: 85%;  }
+}
+@-webkit-keyframes javaS {
   0%   { width: 0px;  }
   100% { width: 55%;  }
 }
-@-webkit-keyframes wordpress {
+@-webkit-keyframes sql {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 65%;  }
 }
 @-webkit-keyframes css {
   0%   { width: 0px;  }
-  100% { width: 90%;  }
+  100% { width: 70%;  }
 }
 @-webkit-keyframes html5 {
   0%   { width: 0px;  }
-  100% { width: 80%;  }
+  100% { width: 85%;  }
 }
-@-webkit-keyframes jquery {
+@-webkit-keyframes nodejs {
   0%   { width: 0px;  }
-  100% { width: 50%;  }
+  100% { width: 60%;  }
+}
+@-webkit-keyframes java {
+  0%   { width: 0px;  }
+  100% { width: 75%;  }
+}
+@-webkit-keyframes objc {
+  0% { width: 0px; }
+  100% { width: 60%; }
+}
+@-webkit-keyframes swf {
+  0% { width: 0px; }
+  100% { width: 75%; }
 }
 
 /* ------------------------------------------------------------------ */
@@ -474,6 +516,13 @@ ul#nav li.current a { color: #F06000; }
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+/*add on .portfolio-item instead .bar*/
+.portfolio-item {
+  margin: 2em auto;
+  max-width: 960px;
+  overflow: hidden;
+}
+
 .portfolio-item .item-wrap a {
    display: block;
    cursor: pointer;
@@ -534,6 +583,24 @@ ul#nav li.current a { color: #F06000; }
    font: 12px/18px 'opensans-light', sans-serif;
    color: #c6c7c7;
    margin-bottom: 0;
+}
+
+/*bar of circle*/
+.portfolio-item .bar {
+    float: left;
+    width: 20%;
+    text-align: center;
+}
+.portfolio-item .bar h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.portfolio-item .bar-circle {
+  display: block;
+  margin: 0.7em auto;
 }
 
 /* on hover */
@@ -613,6 +680,36 @@ ul#nav li.current a { color: #F06000; }
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content .popup-modal {
    opacity: 0;
 }
+
+
+
+/*test*/
+#bars {
+  margin: 2em auto;
+  max-width: 960px;
+  overflow: hidden;
+}
+
+.bar {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+
+.bar h3 {
+  font-size: 1.4em;
+  font-weight: normal;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.bar-circle {
+  display: block;
+  margin: 0.7em auto;
+}
+
+
+
 
 /* ------------------------------------------------------------------ */
 /* f. Call To Action Section
