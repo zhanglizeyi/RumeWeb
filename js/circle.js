@@ -25,7 +25,7 @@
 			var self = this;
 			self.timer = setInterval(function() {
 				self.run();	
-			}, 25);
+			}, 15);
 		},
 		run: function() {
 			var self = this;
@@ -39,7 +39,7 @@
 			
 			self.context.fillText( self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width );
 			self.context.beginPath();
-			self.context.arc( 35, 35, 30, self.start, self.diff / 10 + self.start, false );
+			self.context.arc( 40, 40, 30, self.start, self.diff / 10 + self.start, false );
 			self.context.stroke();
 			
 			if( self.loaded >= self.total ) {
