@@ -10,9 +10,9 @@
    b. Header Styles
    c. About Section
    d. Resume Section
-   e. Portfolio Section
+   e. skills Section
    f. Call To Action Section
-   g. Testimonials Section
+   g. motto Section
    h. Contact Section
    i. Footer
 
@@ -244,8 +244,9 @@ ul#nav li.current a { color: #F06000; }
 }
 #about .profile-pic {
    position: relative;
-   width: 120px;
-   height: 120px;
+   margin-top: 35px;
+   width: 180px;
+   height: 180px;
    border-radius: 100%;
 }
 #about .contact-details { width: 41.66667%; }
@@ -322,342 +323,13 @@ ul#nav li.current a { color: #F06000; }
 /*	Skill Bars
 /*----------------------------------------------*/
 
-.bars {
-	width: 95%;
-	float: left;
-	padding: 0;
-	text-align: left;
-}
-.bars .skills {
-  margin-top: 36px;
-  list-style: none;
-}
-.bars li {
-   position: relative;
-  	margin-bottom: 60px;
-  	background: #696969;
-  	height: 42px;
-  	border-radius: 3px;
-}
-.bars li em {
-	font: 15px 'opensans-bold', sans-serif;
-  color: #313131;
-	text-transform: uppercase;
-  letter-spacing: 2px;
-	font-weight: normal;
-  position: relative;
-	top: -36px;
-}
-.bar-expand {
-   position: absolute;
-   left: 0;
-   top: 0;
 
-   margin: 0;
-   padding-right: 24px;
-   background: #000080;
-   display: inline-block;
-   height: 42px;
-   line-height: 42px;
-   border-radius: 3px 0 0 3px;
-}
 
-.c {
-  	width: 85%;
-  	-moz-animation: c 3s ease;
-  	-webkit-animation: c 3s ease;
-}
-.javaS {
-  	width: 55%;
-  	-moz-animation: javaS 3s ease;
-  	-webkit-animation: javaS 3s ease;
-}
-.sql {
-  	width: 65%;
-  	-moz-animation: sql 3s ease;
-  	-webkit-animation: sql 3s ease;
-}
-.css {
-  	width: 70%;
-  	-moz-animation: css 3s ease;
-  	-webkit-animation: css 3s ease;
-}
-.html5 {
-  	width: 85%;
-  	-moz-animation: html5 3s ease;
-  	-webkit-animation: html5 3s ease;
-}
-.nodejs {
-  	width: 60%;
-  	-moz-animation: nodejs 3s ease;
-  	-webkit-animation: nodejs 3s ease;
-}
-.java {
-    width: 75%;
-    -moz-animation: java 3s ease;
-    -webkit-animation: java 3s ease;
-}
-.objc {
-    width: 60%;
-    -moz-animation: objc 3s ease;
-    -webkit-animation: objc 3s ease;
-}
-.swift {
-    width: 75%;
-    -moz-animation: swf 3s ease;
-    -webkit-animation: swf 3s ease;
-
-}
-
-/*opera*/
-@-moz-keyframes c {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-moz-keyframes javaS {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-moz-keyframes sql {
-  0%   { width: 0px;  }
-  100% { width: 65%;  }
-}
-@-moz-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 70%;  }
-}
-@-moz-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-moz-keyframes nodejs {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-moz-keyframes java {
-  0%   { width: 0px;  }
-  100% { width: 75%;  }
-}
-@-moz-keyframes objc {
-  0% { width: 0px; }
-  100% {width: 60%; }
-}
-@-moz-keyframes swf {  
-  0% { width: 0px; }
-  100% {width: 75%; }
-}
-
-/*other explore*/
-@-webkit-keyframes c {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-webkit-keyframes javaS {
-  0%   { width: 0px;  }
-  100% { width: 55%;  }
-}
-@-webkit-keyframes sql {
-  0%   { width: 0px;  }
-  100% { width: 65%;  }
-}
-@-webkit-keyframes css {
-  0%   { width: 0px;  }
-  100% { width: 70%;  }
-}
-@-webkit-keyframes html5 {
-  0%   { width: 0px;  }
-  100% { width: 85%;  }
-}
-@-webkit-keyframes nodejs {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
-@-webkit-keyframes java {
-  0%   { width: 0px;  }
-  100% { width: 75%;  }
-}
-@-webkit-keyframes objc {
-  0% { width: 0px; }
-  100% { width: 60%; }
-}
-@-webkit-keyframes swf {
-  0% { width: 0px; }
-  100% { width: 75%; }
-}
 
 /* ------------------------------------------------------------------ */
-/* e. Portfolio Section
+/* e. skills Section
 /* ------------------------------------------------------------------ */
 
-#portfolio {
-   background: #ebeeee;
-   padding-top: 90px;
-   padding-bottom: 60px;
-}
-#portfolio h1 {
-   font: 15px/24px 'opensans-semibold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 1px;
-   text-align: center;
-   margin-bottom: 48px;
-   color: #95A3A3;
-}
-
-/* Portfolio Content */
-#portfolio-wrapper .columns { margin-bottom: 36px; }
-.portfolio-item .item-wrap {
-   background: #fff;
-   overflow: hidden;
-   position: relative;
-
-   -webkit-transition: all 0.3s ease-in-out;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-/*add on .portfolio-item instead .bar*/
-.portfolio-item {
-  margin: 2em auto;
-  max-width: 960px;
-  overflow: hidden;
-}
-
-.portfolio-item .item-wrap a {
-   display: block;
-   cursor: pointer;
-}
-
-/* overlay */
-.portfolio-item .item-wrap .overlay {
-   position: absolute;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
-
-	opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);
-
-   -webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-
-   background: url(../images/overlay-bg.png) repeat;
-}
-.portfolio-item .item-wrap .link-icon {
-   display: block;
-   color: #fff;
-   height: 30px;
-   width: 30px;
-   font-size: 18px;
-   line-height: 30px;
-   text-align: center;
-
-   opacity: 0;
-	-moz-opacity: 0;
-	filter:alpha(opacity=0);
-
-   -webkit-transition: opacity 0.3s ease-in-out;
-	-moz-transition: opacity 0.3s ease-in-out;
-	-o-transition: opacity 0.3s ease-in-out;
-	transition: opacity 0.3s ease-in-out;
-
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   margin-left: -15px;
-   margin-top: -15px;
-}
-.portfolio-item .item-wrap img {
-   vertical-align: bottom;
-}
-.portfolio-item .portfolio-item-meta { padding: 18px }
-.portfolio-item .portfolio-item-meta h5 {
-   font: 14px/21px 'opensans-bold', sans-serif;
-   color: #fff;
-}
-.portfolio-item .portfolio-item-meta p {
-   font: 12px/18px 'opensans-light', sans-serif;
-   color: #c6c7c7;
-   margin-bottom: 0;
-}
-
-/*bar of circle*/
-.portfolio-item .bar {
-    float: left;
-    width: 20%;
-    text-align: center;
-}
-.portfolio-item .bar h3 {
-  font-size: 1.4em;
-  font-weight: normal;
-  margin: 0;
-  text-transform: uppercase;
-}
-
-.portfolio-item .bar-circle {
-  display: block;
-  margin: 0.7em auto;
-}
-
-/* on hover */
-.portfolio-item:hover .overlay {
-	opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=100);
-}
-.portfolio-item:hover .link-icon {
-   opacity: 1;
-	-moz-opacity: 1;
-	filter:alpha(opacity=100);
-}
-
-/* popup modal */
-.popup-modal {
-	max-width: 550px;
-	background: #fff;
-	position: relative;
-	margin: 0 auto;
-}
-.popup-modal .description-box { padding: 12px 36px 18px 36px; }
-.popup-modal .description-box h4 {
-   font: 15px/24px 'opensans-bold', sans-serif;
-	margin-bottom: 12px;
-   color: #111;
-}
-.popup-modal .description-box p {
-	font: 14px/24px 'opensans-regular', sans-serif;
-   color: #A1A1A1;
-   margin-bottom: 12px;
-}
-.popup-modal .description-box .categories {
-   font: 11px/21px 'opensans-light', sans-serif;
-   color: #A1A1A1;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   display: block;
-   text-align: left;
-}
-.popup-modal .description-box .categories i {
-   margin-right: 8px;
-}
-.popup-modal .link-box {
-   padding: 18px 36px;
-   background: #111;
-   text-align: left;
-}
-.popup-modal .link-box a {
-   color: #fff;
-	font: 11px/21px 'opensans-bold', sans-serif;
-	text-transform: uppercase;
-   letter-spacing: 3px;
-   cursor: pointer;
-}
-.popup-modal a:hover {	color: #00CCCC; }
-.popup-modal a.popup-modal-dismiss { margin-left: 24px; }
 
 
 /* fadein/fadeout effect for modal popup
@@ -681,11 +353,13 @@ ul#nav li.current a { color: #F06000; }
    opacity: 0;
 }
 
-
-
+.skills{
+  position: relative;;
+}
 /*test*/
 #bars {
-  margin: 2em auto;
+  padding-top: 50px;
+  margin: 1em auto;
   max-width: 1000px;
   overflow: hidden;
 }
@@ -770,10 +444,10 @@ call-to-action .button {
 }
 
 /* ------------------------------------------------------------------
-/* g. Testimonials
+/* g. motto
 /* ------------------------------------------------------------------ */
 
-#testimonials {
+#motto {
    background: #1F1F1F url(../images/testimonials-bg.jpg) no-repeat center center;
    background-size: cover !important;
 	-webkit-background-size: cover !important;
@@ -784,19 +458,19 @@ call-to-action .button {
    width: 100%;
    overflow: hidden;
 }
-#testimonials .text-container {
+#motto .text-container {
    padding-top: 96px;
    padding-bottom: 66px;
 }
-#testimonials h1 {
+#motto h1 {
    font: 18px/24px 'opensans-bold', sans-serif;   
    text-transform: uppercase;
    letter-spacing: 3px;
    color: #fff;
 }
-#testimonials h1 span { display: none; }
-#testimonials .header-col { padding-top: 9px; }
-#testimonials .header-col h1:before {
+#motto h1 span { display: none; }
+#motto .header-col { padding-top: 9px; }
+#motto .header-col h1:before {
    font-family: 'FontAwesome';
    content: "\f10d";
 	padding-right: 10px;
@@ -808,14 +482,14 @@ call-to-action .button {
 }
 
 /*	Blockquotes */
-#testimonials blockquote {
+#motto blockquote {
    margin: 0 0px 30px 0px;
    padding-left: 0;
    position: relative;
    text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
 }
-#testimonials blockquote:before { content: none; }
-#testimonials blockquote p {
+#motto blockquote:before { content: none; }
+#motto blockquote p {
    font-family: 'librebaskerville-italic', serif;
    padding: 0;
    font-size: 24px;
@@ -823,21 +497,21 @@ call-to-action .button {
    color: #fff
 }
 
-#testimonials blockquote img {
+#motto blockquote img {
   position: relative;
   height: 400px;
 }
 
-#testimonials blockquote cite {
+#motto blockquote cite {
    display: block;
    font-size: 12px;
    font-style: normal;
    line-height: 18px;
    color: #fff;
 }
-#testimonials blockquote cite:before { content: "\2014 \0020"; }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited { color: #8B9798; border: none }
+#motto blockquote cite:before { content: "\2014 \0020"; }
+#motto blockquote cite a,
+#motto blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */

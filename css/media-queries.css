@@ -62,13 +62,13 @@
    #resume h1 { font: 16px/24px 'opensans-bold', sans-serif; }
    #resume .main-col { padding-right: 5%; }   
 
-   /* Testimonials Section
+   /* motto Section
    ------------------------------------------------------------------- */
-   #testimonials .header-col h1:before {
+   #motto .header-col h1:before {
       font-size: 66px;
       line-height: 66px;
    }
-   #testimonials blockquote p {
+   #motto blockquote p {
       font-size: 22px;
       line-height: 46px;      
    }
@@ -252,25 +252,26 @@
    #call-to-action p { font-size: 15px; }
 
 
-   /* Portfolio Section
+   /* skills Section
    /* ----------------------------------------------------------------- */
-   #portfolio-wrapper .columns { margin-bottom: 40px; }
-   .popup-modal {	max-width: 85%; }
+   #skills .columns { 
+      padding-top: 20px;
+      margin-bottom: 40px; }
 
 
-   /* Testimonials Section
+   /* motto Section
    ----------------------------------------------------------------------- */
-   #testimonials .text-container { text-align: center; }
-   #testimonials h1 {
+   #motto .text-container { text-align: center; }
+   #motto h1 {
       font: 16px/24px 'opensans-bold', sans-serif;
       text-align: center;
       margin-bottom: 30px;
       text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
    }
-   #testimonials h1 span { display: block; }
-   #testimonials .header-col h1:before { content: none; }
-   #testimonials blockquote { padding-bottom: 24px; }
-   #testimonials blockquote p {
+   #motto h1 span { display: block; }
+   #motto .header-col h1:before { content: none; }
+   #motto blockquote { padding-bottom: 24px; }
+   #motto blockquote p {
       font-size: 20px;
       line-height: 42px;      
    }
