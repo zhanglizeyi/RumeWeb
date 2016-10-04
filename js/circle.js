@@ -10,8 +10,8 @@
 		this.refElement = element.parentNode;
 		this.loaded = 0;
 		this.start = 4.72;
-		this.width = this.context.canvas.width;
-		this.height = this.context.canvas.height;
+		this.width = this.context.canvas.width * 1.5;
+		this.height = this.context.canvas.height * 1.5;
 		this.total = parseInt( this.refElement.dataset.percent, 10 );
 		this.timer = null;
 		
@@ -33,13 +33,18 @@
 			self.diff = ( ( self.loaded / 100 ) * Math.PI * 2 * 10 ).toFixed( 2 );	
 			self.context.clearRect( 0, 0, self.width, self.height );
 			self.context.lineWidth = 10;
-			self.context.fillStyle = "#000";
+			self.context.fillStyle = "rgb(124,252,0)";
 			self.context.strokeStyle = "#d30000";
 			self.context.textAlign = "center";
 			
-			self.context.fillText( self.loaded + "%", self.width * .5, self.height * .5 + 2, self.width );
+			var xCenter = this.width / 4;
+			var yCenter = this.height / 4;
+
+			self.context.font = "20px Arial";
+			self.context.fillText( self.loaded + "%", 52.5, 55);
 			self.context.beginPath();
-			self.context.arc( 40, 40, 30, self.start, self.diff / 10 + self.start, false );
+
+			self.context.arc( 50, 50, 40, self.start, self.diff / 10 + self.start, false );
 			self.context.stroke();
 			
 			if( self.loaded >= self.total ) {

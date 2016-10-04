@@ -368,6 +368,7 @@ ul#nav li.current a { color: #F06000; }
   float: left;
   width: 50%;
   text-align: center;
+  content: #F5FFFA;
 }
 
 .bar h3 {
