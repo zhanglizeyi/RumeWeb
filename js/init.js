@@ -169,7 +169,6 @@
                $('#message-warning').html(msg);
 	             $('#message-warning').fadeIn();
             }
-
 	      }
 
       });
