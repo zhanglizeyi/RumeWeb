@@ -167,7 +167,7 @@
             else {
                $('#image-loader').fadeOut();
                $('#message-warning').html(msg);
-	            $('#message-warning').fadeIn();
+	             $('#message-warning').fadeIn();
             }
 
 	      }

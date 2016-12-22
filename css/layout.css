@@ -34,7 +34,7 @@ header {
    width: 100%;
    background: #161415 url(../images/goldengatenight.jpg) no-repeat top center;
    background-size: cover !important;
-	-webkit-background-size: cover !important;
+	 -webkit-background-size: cover !important;
    text-align: center;
    overflow: hidden;
    animation: fadein 5s;
