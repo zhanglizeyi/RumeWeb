@@ -6,7 +6,7 @@
 
    <!--- Basic Page Needs
    ================================================== -->
-   <meta charset="utf-8">
+  <meta charset="utf-8">
 	<title>Welcome to www.stacktoofull.com</title>
 	<meta name="Resume Website" content="">
 	<meta name="Ze Li" content="">
@@ -25,7 +25,9 @@
    <!-- Script
    ================================================== -->
    <script src="js/modernizr.js"></script>
-
+   <!--snow-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js"></script>
+   <script type="text/javascript" src="js/jquery.let_it_snow.min.js"></script>
    <!-- Favicons
    ================================================== -->
    <link rel="shortcut icon" href="favicon.png" >
@@ -37,7 +39,6 @@
    <!-- Header
    ================================================== -->
    <header id="home">
-
       <nav id="nav-wrap">
 
          <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
@@ -74,6 +75,34 @@
       <p class="scrolldown">
          <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
       </p>
+
+
+      <script type="text/javascript">
+
+      $(document).ready( function() {
+        $("canvas.snow").let_it_snow({
+          speed: 1,
+          size: 15,
+          count: 100,
+          image: "img/snowflake.png"
+        });
+      });    
+      </script>
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+
 
    </header> <!-- Header End -->
 
@@ -488,8 +517,10 @@
 
                   <div>
                       <label for="contactMeg">Message<span class="required">*</span></label>
-                      <input type="text" size="50" maxlength="5000" id="contactMeg" name="contactMeg"></input>
+                      <!-- <input type="text" size="50" maxlength="5000" id="contactMeg" name="contactMeg"></input> -->
                       <!-- <textarea rows="10" cols="50" maxlength="1000" id="contactMeg" name="contactMeg"></textarea> -->
+                      <textarea id="contactMeg" name="contactMeg" cols="45" rows="8" maxlength="65525"></textarea>  
+
                   </div>
 
 
