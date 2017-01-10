@@ -43,16 +43,17 @@ if($_POST) {
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
+   
 
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
+      	print( "name:  $name  email: $email  subject: $subject  contact_message: $contact_message" );
+
 		if ($mail) { echo "OK"; }
-      else { echo "Something went wrong. Please try again.";
-      		 echo "this is email" . $mail . " ";
-      	   }
+		else { echo "Something went wrong. Please try again. -> $email " ;}
 		
 	} # end if - no validation error
 
