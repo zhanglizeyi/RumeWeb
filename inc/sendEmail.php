@@ -50,7 +50,7 @@ if($_POST) {
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
       $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
-      	print( "name:  $name  email: $email  subject: $subject  contact_message: $contact_message" );
+      	//print( "name:  $name  email: $email  subject: $subject  contact_message: $contact_message" );
 
 		if ($mail) { echo "OK"; }
 		else { echo "Something went wrong. Please try again. -> $email " ;}
