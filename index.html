@@ -591,9 +591,10 @@
    <script>
 
         function earseFun(){
-          document.getElementsById("contactName").value("");
+          var conName = document.getElementsById("contactName");
+          var conEmail = document.getElementsById("contactEmail");
 
-    
+          print(conName, conEmail);
         }
 
    </script>
