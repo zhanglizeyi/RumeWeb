@@ -50,10 +50,17 @@ if($_POST) {
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+      
+      if(@mail($siteOwnersEmail, $subject, $message, $headers))
+      {
+      	echo "Mail sent successfully";
+      }
+      else
+      {
+      	echo "Error, something went wrong";
+      }
 
-		if ($mail) { }
-		else { echo "Something went wrong. Please try again. -> $email " ;}
+
 		
 	} # end if - no validation error
 
