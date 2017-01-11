@@ -22,7 +22,7 @@ if($_POST) {
 	// Check Message
 
 
-	print( "this is $_POST['contactMeg'] ");
+	print( "this is contact message:  $contact_message <br />");
 
 	if (strlen($contact_message) < 2) {
 		$error['message'] = "Please enter your message. It should have at least 15 characters.";
