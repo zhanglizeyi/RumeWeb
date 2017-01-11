@@ -9,7 +9,7 @@ if($_POST) {
    $name = trim(stripslashes($_POST['contactName']));
    $email = trim(stripslashes($_POST['contactEmail']));
    $subject = trim(stripslashes($_POST['contactSubject']));
-   $contact_message = trim(stripslashes($_POST['contactMessage']));
+   $contact_message = trim(stripslashes($_POST['contactMeg']));
 
    // Check Name
 	if (strlen($name) < 2) {
@@ -48,7 +48,7 @@ if($_POST) {
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
+      $mail = mail($siteOwnersEmail, $subject, $contact_message, $headers);
 
       	//print( "name:  $name  email: $email  subject: $subject  contact_message: $contact_message" );
 
