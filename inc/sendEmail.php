@@ -21,8 +21,8 @@ if($_POST) {
 	}
 	// Check Message
 
-	$msg = strlen($contact_message);
-	print("this is email:  $msg");
+
+	echo $_POST['contactMeg'];
 
 	if (strlen($contact_message) < 2) {
 		$error['message'] = "Please enter your message. It should have at least 15 characters.";
