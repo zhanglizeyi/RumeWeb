@@ -521,12 +521,11 @@
 
 
                   <div>
-                        <button class="submit">Submit</button>
+                        <button class="submit" onclick="javascript:eraseText();">Submit</button>
                         <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                      </span>
                   </div>
-
 					</fieldset>
 				   </form> <!-- Form End -->
 
@@ -588,6 +587,17 @@
    <script src="js/jquery.fittext.js"></script>
    <script src="js/magnific-popup.js"></script>
    <script src="js/init.js"></script>
+
+   <script>
+
+        function eraseText(){
+          document.getElementsById("contactName").value = "";
+          document.getElementsById("contactEmail").value = "";
+          document.getElementsById("contactSubject").value = "";
+          document.getElementsById("contactMessage").value = "";
+        }
+
+   </script>
 
 </body>
 
