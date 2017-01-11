@@ -20,6 +20,10 @@ if($_POST) {
 		$error['email'] = "Please enter a valid email address.";
 	}
 	// Check Message
+
+	$msg = strlen($contact_message);
+	print("this is email:  $msg");
+
 	if (strlen($contact_message) < 2) {
 		$error['message'] = "Please enter your message. It should have at least 15 characters.";
 	}
@@ -43,13 +47,13 @@ if($_POST) {
  	$headers .= "MIME-Version: 1.0\r\n";
 	$headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
 
-   print( "name:  $name  email: $email  subject: $subject  message: $message" );
+   print( "name:  $name  email: $email <br />  subject: $subject <br /> message: $message" );
 
 
    if (!$error) {
 
       ini_set("sendmail_from", $siteOwnersEmail); // for windows server
-      $mail = mail($siteOwnersEmail, $subject, $contact_message, $headers);
+      $mail = mail($siteOwnersEmail, $subject, $message, $headers);
 
       	
 
