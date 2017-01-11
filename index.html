@@ -521,11 +521,21 @@
 
 
                   <div>
-                        <button class="submit" onclick = document.document.getElementsById("contactName").value("")>Submit</button>
+                        <button id = "submit" class="submit" onclick = "myFun()")>Submit</button>
                         <span id="image-loader">
                         <img alt="" src="images/loader.gif">
                         </span>
                   </div>
+
+                  <script>
+
+                        function myFun(){
+                          document.getElementsById("contactMessage").value('');
+                          document.getElementsById('contactMessage').text("");
+                        }
+
+                  </script>
+
 					</fieldset>
 				  </form> <!-- Form End -->
 
