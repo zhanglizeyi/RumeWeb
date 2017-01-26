@@ -27,7 +27,9 @@ html{padding:0; margin:0; min-height: 100%; height:100%;}
 .collectonme{margin:120px auto; background: red; width:50%; text-align:center; font-size:1.2em; color:#fff;}
 .test-container{position:absolute; top:100px; width:200px; height:200px;border:1px solid black;}
 
-body { background: #0f0f0f; }
+body { 
+  background: #0f0f0f;
+}
 
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
@@ -646,7 +648,7 @@ call-to-action .button {
 /* h. Contact Section
 /* ------------------------------------------------------------------ */
 
-#contact {
+/*#contact {
    background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
@@ -693,7 +695,7 @@ call-to-action .button {
 #contact .header-col { padding-top: 6px; }
 
 /* contact form */
-#contact form { margin-bottom: 30px; }
+/*#contact form { margin-bottom: 30px; }
 #contact label {
    font: 15px/24px 'opensans-bold', sans-serif;
    margin: 12px 0;
@@ -765,7 +767,8 @@ call-to-action .button {
    position: relative;
    left: 18px;
    top: 17px;
-}
+}*/
+
 
 /* Twitter Feed */
 #twitter {

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 PHP: mail() function sending email
 	
 		mail(to, subject, message, heders, parameters)
